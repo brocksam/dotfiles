@@ -12,6 +12,6 @@ Configuration files for my local development environment.
 Set up the symlinks.
 
 ```bash
-show . -t ~
+stow . -t ~
 ```
 
