@@ -3,3 +3,4 @@ theme = "catppuccin-mocha"
 
 # Fonts
 font-family = "MesloLGS Nerd Font Mono Regular"
+font-feature = "-calt"
