@@ -3,3 +3,5 @@
 	name = Sam Brockie
 	email = sambrockie@icloud.com
 
+[core]
+    editor = nvim
