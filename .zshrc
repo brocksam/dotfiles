@@ -5,7 +5,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 ## eza (alternative to ls)
-alias ls=eza
+alias ls="eza --icons --color=always"
 
 ## bat (alternative to cat)
 alias cat=bat
