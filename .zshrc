@@ -1,3 +1,10 @@
+# Shell
+
+## zsh
+
+### Ensure only one copy of each `PATH` entry
+typeset -U path PATH
+
 # Terminal
 
 ## Starship (prompt)
