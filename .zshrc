@@ -34,13 +34,32 @@ fi
 ## git
 autoload -Uz compinit && compinit
 
+## Terraform
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
 # Languages
+
+## Python
+
+### uv
+. "$HOME/.local/bin/env"
+
+## Julia
+path=('/Users/sgb39/.juliaup/bin' $path)
+export PATH
+[ -f "/Users/sgb39/.julia/juliaup/completions/zsh.zsh" ] && source "/Users/sgb39/.julia/juliaup/completions/zsh.zsh"
 
 ## Node
 
+### bun
+[ -s "/Users/sgb39/.bun/_bun" ] && source "/Users/sgb39/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 ### pnpm
-export PNPM_HOME="/Users/sgb39/Library/pnpm"
+export PNPM_HOME='$HOME/Library/pnpm'
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
