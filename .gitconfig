@@ -4,6 +4,7 @@
 	email = sambrockie@icloud.com
 
 [core]
-    editor = nvim
+	editor = nvim
+
 [url "git@github.com:"]
 	insteadOf = https://github.com/
